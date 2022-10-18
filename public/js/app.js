@@ -1,5 +1,4 @@
 // Front End
-console.log('Client js is loaded')
 
 // con il fetch , prendo informazioni dal mio url e le prendo con la response , come un servizio Angular
 //*fetch('http://localhost:3000/weather?adress=Boston').then((response)=>{
