@@ -31,7 +31,8 @@ weatherFrom.addEventListener('submit',(event)=>{
 
     messageOne.textContent='Loading...';
     messageTwo.textContent='';
-    fetch('http://localhost:3000/weather?adress='+location).then((response)=>{
+
+    fetch('/weather?adress='+location).then((response)=>{
     // con il json mi vado a prendere i valori della response
     response.json().then((data)=>{
         if(data.error){

@@ -8,6 +8,9 @@ const { rmSync } = require('fs');
 const geocode=require('./utils/geocode');
 const forecast=require('./utils/forecast')
 
+//Per vedere dove si sta eseguendo la nostra applicazione
+// port prendere il valore da process.env.PORT se esiste o altrimenti prende il valore da 3000
+const port = process.env.PORT || 3000;
 
 // __dirname --> percorso della directory in cui è contenuto il file
 //console.log(__dirname);
@@ -133,6 +136,6 @@ app.get('*',(req,res)=>{
     })
 })*/
 // Porta in cui noi ci colleghiamo per visualizzare i nostri risultati
-app.listen(3000,()=>{
-    console.log('Server start in port 3000')
+app.listen(port,()=>{
+    console.log('Server start in port '+ port)
 })
