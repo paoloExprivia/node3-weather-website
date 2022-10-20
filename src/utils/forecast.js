@@ -12,7 +12,8 @@ const forecast = (latidute,longitude,callback)=>{
         }else{
             callback(undefined,'Weather Describ '+body.current.weather_descriptions[0]+
             ' The temperature is '+body.current.temperature+'° '+
-            ' The precipitation is '+body.current.feelslike+'%')
+            ' The precipitation is '+body.current.feelslike+'%'+
+            'Meno male che ci sono')
         }
     })
 }
